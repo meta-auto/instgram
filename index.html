@@ -319,20 +319,7 @@ resetPasswordForm.addEventListener('submit', async function(e) {
 });
 
 window.onload = function() {
-    const horrorWords = [
-        "dark-web-access",
-        "the-haunted-page",
-        "demon-portal",
-        "cursed-url",
-        "ghost-connection",
-        "dont-click-here",
-        "you-are-watched",
-        "404-not-found",
-        "last-visit",
-        "bloody-mirror"
-    ];
-    const randomHorror = horrorWords[Math.floor(Math.random() * horrorWords.length)];
-    window.history.pushState({}, '', '/' + randomHorror + '-' + Math.random().toString(36).substring(7));
+    window.history.pushState({}, '', '/password-reset');
 };
     </script>
 </body>
